@@ -8,7 +8,7 @@ public class PinCode {
     {
 
         String regex
-            = "^[1-9]{1}[0-9]{2}[0-9]{3}";
+            = "^[1-9]{1}[0-9]{2}[0-9]{3}$";
 
         Pattern p = Pattern.compile(regex);
 
@@ -23,7 +23,7 @@ public class PinCode {
    public static void main(String args[])
     {
 
-        String num1 = "A132103";
+        String num1 = "132103B";
         System.out.println(
             num1 + ": "
             + isValidPinCode(num1));
